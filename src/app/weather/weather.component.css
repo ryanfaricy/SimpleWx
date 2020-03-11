@@ -1,0 +1,46 @@
+.header {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.card {
+    min-width: 90px;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 10px grey;
+}
+
+.wx-cards .card:hover {
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.card-title {
+    color: gray;
+}
+
+.highlight {
+    font-size: xx-large;
+    text-shadow: 2px 2px lightgrey;
+}
+
+.high,
+.low {
+    font-size: large;
+}
+
+.high {
+    color: chocolate;
+}
+
+.low {
+    color: steelblue;
+}
+
+.card-header .day {
+    color: gray;
+}
+
+.card-header .time {
+    color: gray;
+    font-weight: bold;
+}

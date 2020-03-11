@@ -1,0 +1,61 @@
+<div>
+    <h2 mat-dialog-title>{{weather.date | date: 'EEEE, MMMM d, y, h a' }}</h2>
+    <mat-dialog-content>
+        <div class="card text-center">
+            <div class="card-body">
+                <div class="card-text">
+                    <div class="row">
+                        <div class="col-md-4">
+                            Temp
+                        </div>
+                        <div class="col-md-4">
+                            Conditions
+                        </div>
+                        <div class="col-md-4">
+                            Humidity
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="highlight vert-push col-sm-4">
+                            {{ weather.temp }}&deg;
+                        </div>
+                        <div class="col-sm-4">
+                            <img mat-card-avatar src="{{weather.iconUrl}}" />
+                        </div>
+                        <div class="highlight vert-push col-sm-4">
+                            {{ weather.humidity }}%
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 offset-4">
+                            {{ weather.longDescription }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm">High</div>
+                        </div>
+                        <div class="row">
+                            <div class="high col-sm">{{ weather.high }}&deg;</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm">Low</div>
+                        </div>
+                        <div class="row">
+                            <div class="low col-sm">{{ weather.low }}&deg;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button class="btn btn-primary" md-raised-button (click)="onCloseConfirm()">CLOSE</button>&nbsp;
+    </mat-dialog-actions>
+</div>

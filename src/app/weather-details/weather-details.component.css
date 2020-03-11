@@ -1,0 +1,21 @@
+.highlight {
+    font-size: xx-large;
+    text-shadow: 2px 2px lightgrey;
+}
+
+.high,
+.low {
+    font-size: large;
+}
+
+.high {
+    color: chocolate;
+}
+
+.low {
+    color: steelblue;
+}
+
+.vert-push {
+    line-height: 100px;
+}
